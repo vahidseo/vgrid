@@ -1,7 +1,9 @@
 vgrid
 =====
-CSS3 Responsive Grid System
-=====
+
+
+vgrid - CSS3 Responsive Grid System
+
 
 Simple Documentation:
 
