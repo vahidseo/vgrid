@@ -1,0 +1,76 @@
+/*#################################*/
+/*#################################*/
+/*####                         ####*/
+/*####           VGrid         ####*/
+/*####           v1.0          ####*/
+/*####         Vahid Gh F      ####*/
+/*####                         ####*/
+/*#################################*/
+/*#################################*/
+
+*, *:after, *:before {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+[class*='col-'] {
+	float: left;
+	padding: 0;
+	margin: 0 0 0 1%;
+}
+ 
+/*[class*='col-']:last-of-type {
+	float: right;
+}*/
+
+.col-last {
+	float: right;
+}
+ 
+/*[class*='col-']:first-of-type {
+	float: left !important;
+}*/
+
+.col-first {
+	float: left;
+}
+
+.row {
+	padding: 0;
+	margin: 0;
+}
+
+.row:after { /* clear-fix */
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* columns */
+.col-1  { width: 99%; }
+.col-2  { width: 49%; }
+.col-3  { width: 32.33%; }
+.col-4  { width: 24%; }
+.col-5  { width: 19%; }
+.col-6  { width: 15.6666666667%; }
+.col-7  { width: 13.2857142857%; }
+.col-8  { width: 11.5%; }
+.col-9  { width: 10.1111111111%; }
+.col-10 { width: 9%; }
+.col-11 { width: 8.09090909091%; }
+.col-12 { width: 7.33%; }
+
+/* responsive */
+
+@media (min-width: 581px) and (max-width: 800px) {
+	.col-1, .col-2 { width: 99%; }
+	.col-3, .col-4, .col-5 { width: 49%; }
+	.col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 { width: 32.33%; }
+}
+
+@media (max-width: 580px) {
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 { width: 99%; }
+}
