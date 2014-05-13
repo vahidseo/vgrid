@@ -21,18 +21,10 @@
 	padding: 0;
 	margin: 0 0 0 1%;
 }
- 
-/*[class*='col-']:last-of-type {
-	float: right;
-}*/
 
 .col-last {
 	float: right;
 }
- 
-/*[class*='col-']:first-of-type {
-	float: left !important;
-}*/
 
 .col-first {
 	float: left;
